@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+main() {
+    printf("Type in an expression: ");
+    double a, b, ans;
+    char op;
+    scanf("%lf%c%lf", &a, &op, &b);
+    switch (op) {
+    case '+':
+        ans = a + b;
+        break;
+    case '-':
+        ans = a - b;
+        break;
+    case '*':
+        ans = a * b;
+        break;
+    case '/':
+        ans = a / b;
+    default:
+        printf("Unknown operator\n");
+
+    }
+    printf("=%.2f\n", ans);
+
+}
