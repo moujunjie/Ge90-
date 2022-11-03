@@ -1,0 +1,27 @@
+#include <stdio.h>
+int Gcd(int m, int n){
+    int r;
+	while(r != 0)
+	{
+		r = m % n;
+		m = n;
+		n = r;
+	}
+
+  return m;
+    
+}
+int main()
+{
+   int m,n;
+   printf("Input a,b:");
+   scanf("%d,%d", &m, &n);
+   if(m<=0||n<=0){
+       printf("Input error!\n");
+   }else{
+       printf("Gcd=%d\n",Gcd(m,n));
+   }
+   
+    
+    return 0;
+}
