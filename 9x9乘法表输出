@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+
+int main() {
+	printf("Input n:\n");
+	int n;
+	scanf("%d", &n);
+	for (int i = 1; i <= n; i++) {
+		printf("%4d", i);
+	}
+	printf("\n");
+	for (int a = 1; a <= n; a++) {
+		printf("   %c", '-');
+	}
+	printf("\n");
+	for (int b = 1;b<=n;b++) {
+		for (int c =1;c<=b;c++) {
+			printf("%4d",b*c);
+		}
+		printf("\n");
+	}
+
+
+
+
+	return 0;
+}
