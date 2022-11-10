@@ -1,0 +1,40 @@
+
+#include <stdio.h>
+int Fun(int m){
+	int i;
+	for(i = 2;i < m; i++)
+	{
+		if( m % i == 0 )//9 % 2 = 1
+			break;		
+	}
+
+	if(i >= m){
+         return i;
+	}
+	else
+	{
+		return i;
+	}
+    
+
+
+
+}
+
+int main()
+{
+	printf("Please input a number:\n");
+	int num;
+
+	do{
+ 	
+		scanf("%d",&num);
+	}while(num<=1);
+	if(num == Fun(num)){
+	      printf("%d is a prime number\n",num);
+	
+	}else {
+	printf("%d is not a prime number\n" ,num);
+	}
+	return 0;
+	}
