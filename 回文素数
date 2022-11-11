@@ -29,7 +29,7 @@ int main()
     return 0;
 }                   
 
-int IsPrime(int x)
+int IsPrime(int x)//素数判断，开根号
 {                   
     int i, flag = 1;
     int squareRoot = (int)sqrt(x);
