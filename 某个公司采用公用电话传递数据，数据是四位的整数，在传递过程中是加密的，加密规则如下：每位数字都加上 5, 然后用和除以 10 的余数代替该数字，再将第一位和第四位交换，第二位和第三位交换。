@@ -1,0 +1,30 @@
+/**
+某个公司采用公用电话传递数据，数据是四位的整数，在传递过程中是加密的，加密规则如下：每位数字都加上 5, 然后用和除以 10 的余数代替该数字，再将第一位和第四位交换，第二位和第三位交换。
+**输入格式要求："%d" 提示信息："Input a 4 digits number\n"
+**输出格式要求："%d"
+**/
+#include <stdio.h>
+
+int main(){
+      printf("Input a 4 digits number\n");
+	  int num[4];
+	  int i,temp,a,b,c,d;
+	 num[0]=getchar();
+	 num[1]=getchar();
+	 num[2]=getchar();
+	 num[3]=getchar();
+     a = (num[0]-48 +5)%10;
+	 b = (num[1]-48 +5)%10;
+	 c = (num[2]-48 +5)%10;
+	 d = (num[3]-48 +5)%10;
+     num[0] = d;
+	 num[1] = c;
+	 num[2] = b;
+	 num[3] = a;
+
+	  for(i=0;i<=3;i++){
+	  printf("%d",num[i]);
+	  }
+	  
+         return 0;
+}
