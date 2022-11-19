@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+	int num[20];
+	int i;
+	for(i = 0;i<=19;i++){
+	   num[i] = i*3 +2;
+	    printf(" %5d",num[i]);
+	}
+   
+
+ return 0;
+}
